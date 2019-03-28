@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "rvHipsterWebsite",
+    "packageName": "ir.ardebil.rvhipster.website",
+    "packageFolder": "ir/ardebil/rvhipster/website",
+    "serverPort": 8080,
+    "serviceDiscoveryType": "eureka",
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en"
+    ],
+    "clientFramework": "angularX",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.2",
+    "jwtSecretKey": "YTY2MzE2Yjc4Y2IwYjJkNDViZDI4MzU0M2Y4NGY2YzE0MzUyYzg2YjMxZDE1Nzg5NDQxZjQ0YWMzNjBiZjlmYzNmMjIzNGQ2NGJiMGE3NmJmOWEzNDE1YzZiMDNiNzMwMzU5YWMzOTExNWM3MjljOGIzYjhmZjBhMTVhMGU0Zjk=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "AhmadPirzargar",
+  "repository-name": "RuntimeVerificationHipsterWebSite"
+}
