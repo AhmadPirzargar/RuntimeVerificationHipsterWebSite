@@ -11,7 +11,7 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
             [
                 {
                     path: 'admin',
-                    loadChildren: './admin/admin.module#RvHipsterWebsiteAdminModule'
+                    loadChildren: './admin/admin.module#RuntimeVerificationHipsterWebSiteAdminModule'
                 },
                 ...LAYOUT_ROUTES
             ],
@@ -20,4 +20,4 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
     ],
     exports: [RouterModule]
 })
-export class RvHipsterWebsiteAppRoutingModule {}
+export class RuntimeVerificationHipsterWebSiteAppRoutingModule {}

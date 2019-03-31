@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { RvHipsterWebsiteSharedModule } from 'app/shared';
+import { RuntimeVerificationHipsterWebSiteSharedModule } from 'app/shared';
 
 import {
     PasswordStrengthBarComponent,
@@ -15,7 +15,7 @@ import {
 } from './';
 
 @NgModule({
-    imports: [RvHipsterWebsiteSharedModule, RouterModule.forChild(accountState)],
+    imports: [RuntimeVerificationHipsterWebSiteSharedModule, RouterModule.forChild(accountState)],
     declarations: [
         ActivateComponent,
         RegisterComponent,
@@ -27,4 +27,4 @@ import {
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class RvHipsterWebsiteAccountModule {}
+export class RuntimeVerificationHipsterWebSiteAccountModule {}

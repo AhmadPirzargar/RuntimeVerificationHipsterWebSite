@@ -3,14 +3,14 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "rv-hipster-website": {
+        "runtime-verification-hipster-web-site": {
             "root": "",
             "sourceRoot": "src/main/webapp",
             "projectType": "application",
             "architect": {}
         }
     },
-    "defaultProject": "rv-hipster-website",
+    "defaultProject": "runtime-verification-hipster-web-site",
     "cli": {
         "packageManager": "npm"
     },
@@ -20,7 +20,7 @@
             "inlineTemplate": false,
             "spec": false,
             "prefix": "jhi",
-            "styleExt": "scss"
+            "styleExt": "css"
         },
         "@schematics/angular:directive": {
             "spec": false,

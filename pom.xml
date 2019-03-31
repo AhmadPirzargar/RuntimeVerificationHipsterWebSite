@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ir.ardebil.rvhipster.website</groupId>
-    <artifactId>rv-hipster-website</artifactId>
+    <groupId>ir.ardebil.rvhipster</groupId>
+    <artifactId>runtime-verification-hipster-web-site</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Rv Hipster Website</name>
+    <name>Runtime Verification Hipster Web Site</name>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
@@ -500,7 +500,7 @@
                           <image>openjdk:8-jre-alpine</image>
                       </from>
                       <to>
-                          <image>rvhipsterwebsite:latest</image>
+                          <image>runtimeverificationhipsterwebsite:latest</image>
                       </to>
                       <container>
                           <entrypoint>
@@ -527,11 +527,11 @@
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.postgresql.Driver</driver>
-                        <url>jdbc:postgresql://localhost:5432/rvHipsterWebsite</url>
+                        <url>jdbc:postgresql://localhost:5432/RuntimeVerificationHipsterWebSite</url>
                         <defaultSchemaName></defaultSchemaName>
-                        <username>rvHipsterWebsite</username>
+                        <username>RuntimeVerificationHipsterWebSite</username>
                         <password></password>
-                        <referenceUrl>hibernate:spring:ir.ardebil.rvhipster.website.domain?dialect=org.hibernate.dialect.PostgreSQL82Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
+                        <referenceUrl>hibernate:spring:ir.ardebil.rvhipster.domain?dialect=org.hibernate.dialect.PostgreSQL82Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
                     </configuration>
@@ -692,8 +692,8 @@
                             <configuration>
                                 <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>
                                 <generatorName>spring</generatorName>
-                                <apiPackage>ir.ardebil.rvhipster.website.web.api</apiPackage>
-                                <modelPackage>ir.ardebil.rvhipster.website.web.api.model</modelPackage>
+                                <apiPackage>ir.ardebil.rvhipster.web.api</apiPackage>
+                                <modelPackage>ir.ardebil.rvhipster.web.api.model</modelPackage>
                                 <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                                 <validateSpec>true</validateSpec>
                                 <configOptions>

@@ -17,17 +17,17 @@ eureka:
     client:
         enabled: false
     instance:
-        appname: rvHipsterWebsite
-        instanceId: rvHipsterWebsite:${spring.application.instance-id:${random.value}}
+        appname: RuntimeVerificationHipsterWebSite
+        instanceId: RuntimeVerificationHipsterWebSite:${spring.application.instance-id:${random.value}}
 
 spring:
     application:
-        name: rvHipsterWebsite
+        name: RuntimeVerificationHipsterWebSite
     cache:
         type: simple
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:rvHipsterWebsite;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        url: jdbc:h2:mem:RuntimeVerificationHipsterWebSite;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
         name:
         username:
         password:
@@ -93,7 +93,7 @@ jhipster:
         authentication:
             jwt:
                 # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-                base64-secret: YTY2MzE2Yjc4Y2IwYjJkNDViZDI4MzU0M2Y4NGY2YzE0MzUyYzg2YjMxZDE1Nzg5NDQxZjQ0YWMzNjBiZjlmYzNmMjIzNGQ2NGJiMGE3NmJmOWEzNDE1YzZiMDNiNzMwMzU5YWMzOTExNWM3MjljOGIzYjhmZjBhMTVhMGU0Zjk=
+                base64-secret: YWQ4ZmU1YWQzMzhiOWE2Y2ZkODdlNjIxMzRiZjdkMjJlZTJkNjIyY2JjYjhkMTViNGRkMzNhNGVhOGE0YWFjZGI3YmNjZGQ4ZGZhM2I5MzRkZjk3YjI1ZDUxMmExNjU0NDFiYzVlNzExMDA0YTZlMGNhMmNlNTU4MzUzY2Y2ZjU=
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics:

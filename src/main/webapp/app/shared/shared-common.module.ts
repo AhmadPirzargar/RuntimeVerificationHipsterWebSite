@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
-import { RvHipsterWebsiteSharedLibsModule, FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent } from './';
+import { RuntimeVerificationHipsterWebSiteSharedLibsModule, FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent } from './';
 
 @NgModule({
-    imports: [RvHipsterWebsiteSharedLibsModule],
+    imports: [RuntimeVerificationHipsterWebSiteSharedLibsModule],
     declarations: [FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent],
-    exports: [RvHipsterWebsiteSharedLibsModule, FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent]
+    exports: [RuntimeVerificationHipsterWebSiteSharedLibsModule, FindLanguageFromKeyPipe, JhiAlertComponent, JhiAlertErrorComponent]
 })
-export class RvHipsterWebsiteSharedCommonModule {}
+export class RuntimeVerificationHipsterWebSiteSharedCommonModule {}

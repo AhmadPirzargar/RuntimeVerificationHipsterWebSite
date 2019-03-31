@@ -1,7 +1,7 @@
 {
-    "name": "rv-hipster-website",
+    "name": "runtime-verification-hipster-web-site",
     "version": "0.0.0",
-    "description": "Description for rvHipsterWebsite",
+    "description": "Description for RuntimeVerificationHipsterWebSite",
     "private": true,
     "license": "UNLICENSED",
     "cacheDirectories": [
@@ -79,8 +79,6 @@
         "tslint-config-prettier": "1.18.0",
         "tslint-loader": "3.6.0",
         "typescript": "3.2.4",
-        "sass": "1.17.0",
-        "sass-loader": "7.1.0",
         "postcss-loader": "3.0.0",
         "xml2js": "0.4.19",
         "webpack": "4.29.3",

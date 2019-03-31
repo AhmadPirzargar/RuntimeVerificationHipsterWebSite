@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { Observable, throwError } from 'rxjs';
 
-import { RvHipsterWebsiteTestModule } from '../../../test.module';
+import { RuntimeVerificationHipsterWebSiteTestModule } from '../../../test.module';
 import { AccountService } from 'app/core';
 import { SettingsComponent } from 'app/account/settings/settings.component';
 import { JhiTrackerService } from 'app/core/tracker/tracker.service';
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [RvHipsterWebsiteTestModule],
+                imports: [RuntimeVerificationHipsterWebSiteTestModule],
                 declarations: [SettingsComponent],
                 providers: [
                     {

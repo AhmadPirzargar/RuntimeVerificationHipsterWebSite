@@ -12,4 +12,4 @@ import { RouterModule } from '@angular/router';
     providers: [],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class RvHipsterWebsiteEntityModule {}
+export class RuntimeVerificationHipsterWebSiteEntityModule {}

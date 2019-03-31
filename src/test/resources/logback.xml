@@ -4,7 +4,7 @@
 <configuration scan="true">
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
-    <logger name="ir.ardebil.rvhipster.website" level="INFO"/>
+    <logger name="ir.ardebil.rvhipster" level="INFO"/>
 
     <logger name="io.github.jhipster" level="WARN"/>
 

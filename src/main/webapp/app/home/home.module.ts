@@ -1,12 +1,12 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { RvHipsterWebsiteSharedModule } from 'app/shared';
+import { RuntimeVerificationHipsterWebSiteSharedModule } from 'app/shared';
 import { HOME_ROUTE, HomeComponent } from './';
 
 @NgModule({
-    imports: [RvHipsterWebsiteSharedModule, RouterModule.forChild([HOME_ROUTE])],
+    imports: [RuntimeVerificationHipsterWebSiteSharedModule, RouterModule.forChild([HOME_ROUTE])],
     declarations: [HomeComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class RvHipsterWebsiteHomeModule {}
+export class RuntimeVerificationHipsterWebSiteHomeModule {}

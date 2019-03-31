@@ -11,12 +11,12 @@ import { AuthInterceptor } from './blocks/interceptor/auth.interceptor';
 import { AuthExpiredInterceptor } from './blocks/interceptor/auth-expired.interceptor';
 import { ErrorHandlerInterceptor } from './blocks/interceptor/errorhandler.interceptor';
 import { NotificationInterceptor } from './blocks/interceptor/notification.interceptor';
-import { RvHipsterWebsiteSharedModule } from 'app/shared';
-import { RvHipsterWebsiteCoreModule } from 'app/core';
-import { RvHipsterWebsiteAppRoutingModule } from './app-routing.module';
-import { RvHipsterWebsiteHomeModule } from './home/home.module';
-import { RvHipsterWebsiteAccountModule } from './account/account.module';
-import { RvHipsterWebsiteEntityModule } from './entities/entity.module';
+import { RuntimeVerificationHipsterWebSiteSharedModule } from 'app/shared';
+import { RuntimeVerificationHipsterWebSiteCoreModule } from 'app/core';
+import { RuntimeVerificationHipsterWebSiteAppRoutingModule } from './app-routing.module';
+import { RuntimeVerificationHipsterWebSiteHomeModule } from './home/home.module';
+import { RuntimeVerificationHipsterWebSiteAccountModule } from './account/account.module';
+import { RuntimeVerificationHipsterWebSiteEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
@@ -32,13 +32,13 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
             i18nEnabled: true,
             defaultI18nLang: 'en'
         }),
-        RvHipsterWebsiteSharedModule.forRoot(),
-        RvHipsterWebsiteCoreModule,
-        RvHipsterWebsiteHomeModule,
-        RvHipsterWebsiteAccountModule,
+        RuntimeVerificationHipsterWebSiteSharedModule.forRoot(),
+        RuntimeVerificationHipsterWebSiteCoreModule,
+        RuntimeVerificationHipsterWebSiteHomeModule,
+        RuntimeVerificationHipsterWebSiteAccountModule,
         // jhipster-needle-angular-add-module JHipster will add new module here
-        RvHipsterWebsiteEntityModule,
-        RvHipsterWebsiteAppRoutingModule
+        RuntimeVerificationHipsterWebSiteEntityModule,
+        RuntimeVerificationHipsterWebSiteAppRoutingModule
     ],
     declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
     providers: [
@@ -65,7 +65,7 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
     ],
     bootstrap: [JhiMainComponent]
 })
-export class RvHipsterWebsiteAppModule {
+export class RuntimeVerificationHipsterWebSiteAppModule {
     constructor(private dpConfig: NgbDatepickerConfig) {
         this.dpConfig.minDate = { year: moment().year() - 100, month: 1, day: 1 };
     }

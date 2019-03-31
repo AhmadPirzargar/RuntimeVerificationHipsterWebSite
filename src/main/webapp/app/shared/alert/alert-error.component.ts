@@ -12,7 +12,8 @@ import { Subscription } from 'rxjs';
                     <pre [innerHTML]="alert.msg"></pre>
                 </ngb-alert>
             </div>
-        </div>`
+        </div>
+    `
 })
 export class JhiAlertErrorComponent implements OnDestroy {
     alerts: any[];
@@ -22,7 +23,7 @@ export class JhiAlertErrorComponent implements OnDestroy {
         /* tslint:enable */
         this.alerts = [];
 
-        this.cleanHttpErrorListener = eventManager.subscribe('rvHipsterWebsiteApp.httpError', response => {
+        this.cleanHttpErrorListener = eventManager.subscribe('runtimeVerificationHipsterWebSiteApp.httpError', response => {
             let i;
             const httpErrorResponse = response.content;
             switch (httpErrorResponse.status) {
@@ -55,7 +56,7 @@ export class JhiAlertErrorComponent implements OnDestroy {
                             // convert 'something[14].other[4].id' to 'something[].other[].id' so translations can be written to it
                             const convertedField = fieldError.field.replace(/\[\d*\]/g, '[]');
                             const fieldName = translateService.instant(
-                                'rvHipsterWebsiteApp.' + fieldError.objectName + '.' + convertedField
+                                'runtimeVerificationHipsterWebSiteApp.' + fieldError.objectName + '.' + convertedField
                             );
                             this.addErrorAlert('Error on field "' + fieldName + '"', 'error.' + fieldError.message, { fieldName });
                         }

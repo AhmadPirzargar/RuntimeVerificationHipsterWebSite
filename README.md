@@ -1,4 +1,4 @@
-# rvHipsterWebsite
+# RuntimeVerificationHipsterWebSite
 
 This application was generated using JHipster 5.8.2, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v5.8.2](https://www.jhipster.tech/documentation-archive/v5.8.2).
 
@@ -37,9 +37,9 @@ Service workers are commented by default, to enable them please uncomment the fo
 ```html
 <script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-        .register('./service-worker.js')
-        .then(function() { console.log('Service Worker Registered'); });
+        navigator.serviceWorker.register('./service-worker.js').then(function() {
+            console.log('Service Worker Registered');
+        });
     }
 </script>
 ```
@@ -103,7 +103,7 @@ Refer to [Doing API-First development][] for more details.
 
 ## Building for production
 
-To optimize the rvHipsterWebsite application for production, run:
+To optimize the RuntimeVerificationHipsterWebSite application for production, run:
 
     ./mvnw -Pprod clean package
 

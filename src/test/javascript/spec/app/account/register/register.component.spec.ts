@@ -3,7 +3,7 @@ import { Observable, of, throwError } from 'rxjs';
 
 import { JhiLanguageService } from 'ng-jhipster';
 import { MockLanguageService } from '../../../helpers/mock-language.service';
-import { RvHipsterWebsiteTestModule } from '../../../test.module';
+import { RuntimeVerificationHipsterWebSiteTestModule } from '../../../test.module';
 import { EMAIL_ALREADY_USED_TYPE, LOGIN_ALREADY_USED_TYPE } from 'app/shared';
 import { Register } from 'app/account/register/register.service';
 import { RegisterComponent } from 'app/account/register/register.component';
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                imports: [RvHipsterWebsiteTestModule],
+                imports: [RuntimeVerificationHipsterWebSiteTestModule],
                 declarations: [RegisterComponent]
             })
                 .overrideTemplate(RegisterComponent, '')
